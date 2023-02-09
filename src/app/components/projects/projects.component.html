@@ -1,0 +1,53 @@
+
+<!-- Proyectos -->
+<section class=" text-center bg-dark">
+    <div class="container p-5">
+      <h1 class="text-center" class="proyectos" style="color: aliceblue;">Proyectos</h1>
+      <i class="fa-thin fa-briefcase"></i>
+    
+      <p style="color: aliceblue;">
+        Proyectos en proceso y finalizados.    
+      </p>    
+      <div class="row justify-content-center">
+        <!-- USER -->
+        <div class="col-lg-3" *ngFor=" let proyecto of proyectos">
+          <div class="card h-100">
+            <div class="card-body">
+              <img src="{{proyecto.foto}}" class="card-img-top">
+              <h2>{{proyecto.nombre}}</h2>
+              <p>
+                {{proyecto.descripcion}}
+    
+              </p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-4">
+                  <a href="{{proyecto.link}}" class="btn btn-primary">Visitar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!--
+        <div class="col-lg-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <img src="https://www.anahuac.mx/mexico/sites/default/files/noticias/Los-colores-que-utilizamos-en-la-ropa-dicen-como-somos.jpg" class="card-img-top ">
+              <h3 style="color: black;">Sintesis de Carrera</h3>
+                <p>
+                  Desarrollo de carrera 
+                </p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-4">
+                  <a href="https://github.com/CandelaAlv" class="btn btn-primary">Visitar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      -->
+    
+    
+    
+      </div>
+    </div>
+    </section>
